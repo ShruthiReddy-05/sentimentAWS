@@ -51,7 +51,7 @@ The app allows users to input text on a static website hosted on Amazon S3, whic
 ```bash
 zip function.zip lambda_function.py
 aws lambda create-function \
-  --function-name aws-sentimentt \
+  --function-name  \
   --runtime python3.12 \
   --role arn:aws:iam::<your-account-id>:role/<lambda-execution-role> \
   --handler lambda_function.lambda_handler \
@@ -87,9 +87,9 @@ curl -X POST \
 ### 4️⃣ Host Frontend on S3
 
 ```bash
-aws s3 mb s3://aws-sentimentt
-aws s3 website s3://aws-sentimentt/ --index-document index.html
-aws s3 cp index.html s3://aws-sentimentt/
+aws s3 mb s3://bname
+aws s3 website s3://bname/ --index-document index.html
+aws s3 cp index.html s3://bname/
 ```
 ![alt text](image.png)
 Enable static website hosting and make it public (via console or policy).
@@ -156,11 +156,5 @@ I love working with AWS!
 
 ---
 
-## 🪪 License
-
-This project is licensed under the MIT License — free to use and modify.
-
-```
-```
 
 
