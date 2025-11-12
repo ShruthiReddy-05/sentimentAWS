@@ -17,9 +17,9 @@ The app allows users to input text on a static website hosted on Amazon S3, whic
 
 ## 🏗️ System Architecture
 
-````
+
 ![alt text](image-1.png)
----
+
 
 ## 🧰 AWS Services Used
 
@@ -161,4 +161,6 @@ I love working with AWS!
 This project is licensed under the MIT License — free to use and modify.
 
 ```
+```
+
 
